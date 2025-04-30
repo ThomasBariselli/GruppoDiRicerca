@@ -14,8 +14,20 @@
         background-color: rgba(0, 0, 0, 0.05);
         border-radius: 110%;
       }
+      .bi-envelope{
+          opacity: 0;
+          transition: 0.3s;
+      }
+      .btn-secondary:hover .bi-envelope{
+        opacity: 1;
+        transition: 0.3s;
+      }
       .card{
         margin: 2%;
+      }
+      .card:hover{
+        margin: 2%;
+        border-color: white;
       }
     </style>
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark" style="z-index: 9999; position:fixed;width: 100%;top: 0%;">
@@ -53,7 +65,7 @@
             <h2>BENVENUTI NELLA PAGINA DEL GRUPPO DI RICERCA!<br><br></h2>
             <p class="lead">Il Gruppo di Ricerca XYZ è un team multidisciplinare di scienziati e ricercatori impegnati nell'avanzamento della conoscenza e dell'innovazione. Fondato nel 2010, il nostro gruppo collabora con istituzioni accademiche e industriali di tutto il mondo per esplorare nuove frontiere della scienza e della tecnologia.</p>
             <p class="lead">Siamo entusiasti di condividere i nostri progressi e le nostre scoperte con voi. Esplorate il nostro sito per saperne di più sui nostri progetti, pubblicazioni e collaborazioni. Per ulteriori informazioni, non esitate a contattarci.<br><br></p>
-            <button type="button" class="btn btn-secondary btn-lg" onclick="location.href='#contatti'"><span style="text-decoration: none;color: aliceblue;padding-right: 0%;">Contattaci</span></button>
+            <button type="button" class="btn btn-secondary btn-lg" onclick="location.href='#contatti'"><span style="text-decoration: none;color: aliceblue;">&nbsp;&nbsp;&nbsp;Contattaci&nbsp;</span><a class="bi bi-envelope" style="text-decoration: none;color: aliceblue;"></a></button>
           </div>
         </div>
     </div>
