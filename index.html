@@ -7,14 +7,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   </head>
-  <body>
+  <body style="background-color: rgba(0, 0, 0, 0.05);">
     <style>
       .btn-floating:hover{
         background-color: rgba(0, 0, 0, 0.05);
         border-radius: 110%;
       }
+      .card{
+        margin: 2%;
+      }
     </style>
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark" style="z-index: 9999; position:fixed;width: 100%;top: 0%;">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -43,33 +46,42 @@
       </div>
     </nav>
 
-    <div class="container-fluid my-5 text-center" style="max-width: 600px;">
-      <h1>Benvenuti nella pagina del Gruppo di Ricerca!</h1>
-      <p class="lead">Il Gruppo di Ricerca XYZ è un team multidisciplinare di scienziati e ricercatori impegnati nell'avanzamento della conoscenza e dell'innovazione. Fondato nel 2010, il nostro gruppo collabora con istituzioni accademiche e industriali di tutto il mondo per esplorare nuove frontiere della scienza e della tecnologia.</p>
-      <p class="lead">Siamo entusiasti di condividere i nostri progressi e le nostre scoperte con voi. Esplorate il nostro sito per saperne di più sui nostri progetti, pubblicazioni e collaborazioni. Per ulteriori informazioni, non esitate a contattarci.</p>
-      <button type="button" class="btn btn-info btn-lg"><a class="bi-envelope" style="text-decoration: none;color: aliceblue;" href="#contatti">&nbsp;Contattaci</a></button>
+    <div style="background-image: url(immagini/nature.jpg);align-items: center;">
+        <div class="container-fluid my-5 text-center" style="max-width: 800px;background-color: white;">
+          <div class="container-fluid text-center" style="max-width: 600px;padding-top: 10%;padding-bottom: 9%;">
+            <h2>BENVENUTI NELLA PAGINA DEL GRUPPO DI RICERCA!<br><br></h2>
+            <p class="lead">Il Gruppo di Ricerca XYZ è un team multidisciplinare di scienziati e ricercatori impegnati nell'avanzamento della conoscenza e dell'innovazione. Fondato nel 2010, il nostro gruppo collabora con istituzioni accademiche e industriali di tutto il mondo per esplorare nuove frontiere della scienza e della tecnologia.</p>
+            <p class="lead">Siamo entusiasti di condividere i nostri progressi e le nostre scoperte con voi. Esplorate il nostro sito per saperne di più sui nostri progetti, pubblicazioni e collaborazioni. Per ulteriori informazioni, non esitate a contattarci.<br><br></p>
+            <button type="button" class="btn btn-secondary btn-lg"><a class="bi-envelope" style="text-decoration: none;color: aliceblue;" href="#contatti">&nbsp;Contattaci</a></button>
+          </div>
+        </div>
     </div>
-  
-    <div class="container-fluid" style="align-items: center;display: flex; justify-content: center;">
-      <div class="card text-bg-secondary mb-3" style="max-width: 18rem;float: left;display: block;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h5 class="card-title">Secondary card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="container-fluid my-5 text-center">
+      <h2>SCOPRI LE NOSTRE ATTIVITÀ<br><br></h2>
+      <div class="container-fluid" style="align-items: center;display: flex; justify-content: center;">
+        <div class="card text-bg-secondary mb-3" style="max-width: 18rem;" role="button" onclick="location.href='chisiamo.html'">
+          <img src="immagini/chisiamo.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CHI SIAMO</h5>
+            <p class="card-text">Un team multidisciplinare dedicato alla ricerca e all’innovazione.
+              Dal 2010 collaboriamo con università, centri di ricerca e aziende per affrontare sfide scientifiche complesse e generare impatto reale attraverso la conoscenza.</p>
+          </div>
         </div>
-      </div>
-      <div class="card text-bg-secondary mb-3" style="max-width: 18rem;float: left;display: block;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h5 class="card-title">Secondary card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="card text-bg-secondary mb-3" style="max-width: 18rem;" role="button" onclick="location.href='progetti.html'">
+          <img src="immagini/progetti.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">PROGETTI</h5>
+            <p class="card-text">Soluzioni concrete per problemi reali.
+              Dalla teoria alla pratica: sviluppiamo progetti che uniscono competenze scientifiche, tecniche e creative per affrontare le sfide del futuro.</p>
+          </div>
         </div>
-      </div>
-      <div class="card text-bg-secondary mb-3" style="max-width: 18rem;float: left;display: block;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h5 class="card-title">Secondary card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="card text-bg-secondary mb-3" style="max-width: 18rem;" role="button" onclick="location.href='pubblicazioni.html'">
+          <img src="immagini/pubblicazioni.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">PUBBLICAZIONI</h5>
+            <p class="card-text">Condividiamo la nostra conoscenza con il mondo.
+              Le nostre pubblicazioni riflettono l’impegno per l’eccellenza scientifica e la diffusione dei risultati in ambito accademico e industriale.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -84,7 +96,7 @@
             <div style="float:left;width: 40%;text-align: center;margin-left: 10%;"><i class="bi bi-phone"></i><br>Tel: 333 333 3333</div>
         </div>
         <div style="margin:0 auto;display: flex; justify-content: center;align-items: center;">
-          <div style="float:left;width: 33%;text-align: center;"><i class="bi bi-envelope" ></i><br>gruppodiricerca@gmail.com<br><br><br></div>
+          <div style="float:left;width: 33%;text-align: center;transition: all 0.5s;cursor: pointer;"><i class="bi bi-envelope" ></i><br>gruppodiricerca@gmail.com<br><br><br></div>
         </div>
       </div>
     </div>
